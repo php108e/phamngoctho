@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAO_DUNG_MENU</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.nav ul{
+			list-style-type: none;
+		}
+		.nav a{
+			text-decoration: none;
+		}
+		.nav ul li{
+			position: relative;
+			width: 200px;
+			display: inline-block;
+		}
+		.nav ul li ul{
+			display: none;
+			position: absolute;
+		}
+		.nav ul li:hover >ul{
+			display: block;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul type="disk" >
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li>
+				<a href="#">Sản phẩm nam</a>
+				<ul type="circle">
+					<li><a href="#">Áo nam</a>
+						<ul type="square">
+							<li><a href="#"> Áo Việt Nam</a></li>
+							<li><a href="#"> Áo Trung Quốc</a></li>
+							<li><a href="#"> Áo Mỹ</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Quần nam</a></li>
+					<li><a href="#">Ví nam</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Sản phẩm nữ</a>
+				<ul type="circle">
+					<li><a href="#">Áo nữ</a></li>
+					<li><a href="#">Quần nữ</a></li>
+					<li><a href="#">Ví nữ</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Liên hệ</a></li>
+		</ul>
+	</div>
+</body>
+</html>

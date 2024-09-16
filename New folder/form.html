@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form-HTML</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		label{
+			color:blue;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<form action="process.php" method="get">
+		<label style="color:red;font-weight:bold;">Họ và tên</label>
+		<input type="text" name="txtfullname" placeholder="Nhập tên"><br>
+		<label>Giới tính</label>
+		<input type="radio" name="rbGender" checked="true" value="1">Nam
+		<input type="radio" name="rbGender" value="0">Nữ
+		<label>Sở thích</label>
+		<input type="checkbox" checked="true" name="chkPav[]" value="1">Ngắm trời mưa
+		<input type="checkbox" name="chkPav[]" checked="true" value="2">Ăn thịt bò
+		<input type="checkbox" name="chkPav[]" value="3">Đi du lịch<br>
+		<label>Hộ khẩu thường trú</label>
+		<textarea name="hktt" cols="50" rows="5"></textarea><br>
+		<label>Tỉnh/Thành phố </label>
+		<select name="cbCity">
+			<option value="Hà Nội">Hà Nội</option>
+			<option value="HCM" selected="true">HCM</option>
+			<option value="Đà Nẵng ">Đà Nẵng</option>
+		</select><br>
+		<input type="submit" name="btnReg" value="Đăng kí">
+		<input type="reset" name="btnReg" value="Nhập lại">
+	</form>
+</body>
+</html>

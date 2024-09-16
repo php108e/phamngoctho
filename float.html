@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding:0;
+			color: white;
+		}
+		#container{
+			margin: auto;
+			width: 80%;
+		}
+		#header{
+			background-color: red;
+			height: 100px;
+		}
+		#nav{
+			background-color: blue;
+			height: 30px;
+		}
+		#content{
+			width: 70%;
+			float:left;
+		}
+		#section{
+			height: 200px;
+			background-color: black;
+		}
+		#article{
+			height: 200px;	
+			background-color: gray;
+		}
+		#aside{
+			width: 30%;
+			background-color: green;
+			height: 400px;
+			float: left;
+				}
+		#footer{
+			background-color: pink;
+			height: 50px;
+			clear:both;
+		}
+		.nav{
+			height: 40px;
+			background-color: white;
+		}
+		.nav ul{
+			list-style: none;
+			padding-left: 0px;
+		}
+		.nav ul li{
+			display: inline-block;
+			line-height: 40px;
+			margin: 0px;
+		}
+		.nav ul li ul{
+			display: none;
+		}
+		.nav ul li:hover .menu2{ display: block }
+	</style>
+</head>
+<body>
+	<div  id="container">
+		<div id="header"></div>
+		<div class="nav" style="color: white">
+			<ul>
+				<li><a href="#">Thời trang</a>
+					<ul class="menu2">
+						<li><a href="#">Thời trang nam</a></li>
+						<li><a href="#">Thời trang nữ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Đồ điện tử</a>
+					<ul class="menu2">
+						<li><a href="#">Thời trang nam</a></li>
+						<li><a href="#">Thời trang nữ</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Đồ gia dụng</a>
+					<ul class="menu2">
+						<li><a href="#">Thời trang nam</a></li>
+						<li><a href="#">Thời trang nữ</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="nav"></div>
+		<div id="content">
+			<div id="section"></div>
+			<div id="article"></div>
+		</div>
+		<div id="aside"></div>
+		<div id="footer"></div> 
+	</div>
+</body>
+</html>

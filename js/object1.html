@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* Tạo đối tượng trong JS có kiểu Object */
+		// var doctor = new Object();
+		// //Gắn giá trị cho thuộc tính
+		// doctor.name ="Peter";
+		// doctor.age = 40;
+		// alert("Tên của bác sĩ:"+ doctor.name +"\n Tuổi:" + doctor.age);
+
+		/* Tạo đối tượng kiểu 'Template' là đối tượng được người dùng định nghĩa */
+		function Student(_n, _a, _l){
+			this.name = _n;
+			this.age = _a;
+			this.location = _l;
+			//Tạo phương thức cho đối tượng là Student
+			this.showInfo = function (){
+				document.write("Tên SV "+ this.name);
+				document.write("<br>Tuổi SV "+ this.age);
+				document.write("<br>Địa chỉ SV "+ this.location);
+			}
+		}
+		//Khai báo đối tượng có kiểu template'Student'
+		var ten = prompt("Mời bạn nhập tên");
+		var tuoi = prompt("Mời bạn nhập tuổi");
+		var diachi = prompt("Mời bạn nhập địa chỉ");
+		var objStu = new Student(ten, tuoi, diachi);
+		objStu.showInfo();
+		// document.write("Tên của bạn là: "+ objStu.name);
+		// document.write("<br>Tuổi của bạn là: "+ objStu.age);
+		// document.write("<br>Địa chỉ  của bạn là: "+ objStu.location);
+	</script>
+</body>
+</html>

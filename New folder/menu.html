@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THỜI TRANG</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*selector css */
+		li{
+			color: red;
+		}
+		/*Class css*/
+		.level1{
+			color: blue;
+			text-transform: uppercase;
+		}
+		#block1{
+			background: yellow;
+		}
+		#block2{
+			background: pink;
+		}
+		.nav ul li{
+			display: inline-block;
+		}
+		.nav ul li ul{
+			display: none;
+		}
+		.nav ul li:hover #nav ul li ul{
+			display: block;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class ="nav">
+	<ul type="square">
+		<li class="level1"><a href="#"> Thời trang nam</a>
+			<ul id="block1">
+				<li><a href="#">Quần Nam</a></li>
+				<li><a href="#">Áo Nam</a></li>
+				<li><a href="#">Phụ kiện</a></li>
+			</ul>
+		</li>
+		<li class="level1"><a href="#"> Thời trang nữ</a>
+			<ul id="block2">
+				<li><a href="#">Váy nữ</a></li>
+				<li><a href="#">Phụ kiện</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

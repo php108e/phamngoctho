@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập Lab 7</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function validate(){	
+			var status =true;
+			var name = document.getElementById("txtName").value;
+			var user = document.getElementById("txtUser").value;
+			var pass = document.getElementById("txtPass").value;
+			var repass = document.getElementById("txtRepass").value;
+			var email = document.getElementById("txtEmail").value;
+			var phone = document.getElementById("txtPhone").value;
+			var add = document.getElementById("txtAddress").value;
+			if (name== "") {
+				document.getElementById("msgName").innerHTML ="Họ tên không được để trống" 	 ;
+				document.getElementById("txtName").style.border="1px solid red";
+				status = false;	
+			}else{
+				document.getElementById("msgName").style.display="none";
+			}
+			if (user== "") {
+			 	document.getElementById("msgUser").innerHTML ="Tên tài khoản không được để trống" 	 ;
+			 	document.getElementById("txtUser").style.border="1px solid red";
+				status = false;	
+			}else{
+				document.getElementById("msgUser").style.display="none";
+			}
+			var pattern_pass =/(^[A-Z])([a-z]*)([!@#$%^&*]{1})([0-9]){8,}/;
+
+			if (pass== "") {
+			 	document.getElementById("msgPass").innerHTML ="Mật khẩu không được để trống" 	 ;
+			 	document.getElementById("txtPass").style.border="1px solid red";
+			 	status = false;	
+			}else{
+			 	if (pattern_pass.test(pass) == false){
+			 	document.getElementById("msgPass").innerHTML ="Mật khẩu không đúng định dạng" 	 ;
+			 	document.getElementById("txtPass").style.border="1px solid red";
+			 	status = false;	
+			 	}else{
+					document.getElementById("msgPass").style.display="none";
+				}
+			}
+			if (repass== "") {
+			 	document.getElementById("msgRepass").innerHTML ="Vui lòng nhập lại mật khẩu" 	 ;
+			 	document.getElementById("txtRepass").style.border="1px solid red";
+			 	status = false;	
+			}else{
+				document.getElementById("msgRepass").style.display="none";
+			}
+			var pattern_email = /([a-z]{2,})\@\.([a-z]{3,}) /i;
+			if (email== "") {
+			 	document.getElementById("msgEmail").innerHTML ="Email không được để trống" 	 ;
+			 	document.getElementById("txtEmail").style.border="1px solid red";
+			 	status = false;	
+			}else{
+					document.getElementById("msgEmail").innerHTML ="Email không hợp lệ " 	 ;
+			 	document.getElementById("txtEmail").style.border="1px solid red";
+				}else {
+					document.getElementById("msgEmail").style.display="none";
+				}
+			}
+			var pattern_phone= /(^0[0-9]{9,10})/;
+			if (phone== "") {
+			 	document.getElementById("msgPhone").innerHTML ="Số điện thoại không được để trống" ;
+			 	document.getElementById("txtPhone").style.border="1px solid red";
+			 	status = false;	
+			}else{
+				if (pattern_phone.test(phone) == false){
+				document.getElementById("msgPhone").innerHTML ="Số điện thoại không hợp lệ" ;
+			 	document.getElementById("txtPhone").style.border="1px solid red";
+			 	status = false;	
+				}else{
+					document.getElementById("msgPhone").style.display="none";
+				}
+			}
+			if (status == false){
+				return false;
+			}else{
+				return true;
+			}
+		}	
+	</script>
+</head>
+<body>
+	<h1>Đăng kí tài khoản</h1>
+	<form action="process.php" method="POST" onsubmit="return validate();">
+		<table>
+			<tr>
+				<td>Họ và tên</td>
+				<td>
+					<input type="text" name="txtName" id="txtName">
+					<span id="msgName"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Tên tài khoản</td>
+				<td>
+					<input type="text" name="txtUser" id="txtUser">
+					<span id="msgUser"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td>
+					<input type="text" name="txtPass" id="txtPass">
+					<span id="msgPass"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Nhập lại mật khẩu</td>
+				<td>
+					<input type="text" name="txtRepass" id="txtRepass">
+					<span id="msgRepass"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+					<input type="text" name="txtEmail" id="txtEmail">
+					<span id="msgEmail"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Số điện thoại </td>
+				<td>
+					<input type="text" name="txtPhone" id="txtPhone">
+					<span id="msgPhone"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td>
+					<input type="text" name="txtAddress" id="txtAddress">
+					<span id="msgAddress"></span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="btnReg" value="Đăng kí" onclick="validate()"></td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			margin-bottom: 5px;
+		}
+		#header{
+			height: 100px;
+			border: 1px red solid;
+		}
+		#menu{
+			border: 1px green solid;
+		}
+		.nav ul{
+			list-style-type: none;	
+			padding: 0;
+			margin: 0;
+			text-align:center;
+			background-color: #e3e3e3;
+		}
+		
+		.nav ul li ul{
+			display:none;
+			position:absolute;
+		}
+		
+		.nav ul li:hover > ul{
+			display:block;
+			z-index: 1;
+		}
+		
+		.nav ul li{
+			position:relative;
+			width: 200px;
+			display: inline-block;	
+		}
+		
+		.nav a{
+			display:block;
+			text-decoration:none;
+			padding: 10px 10px	
+		}
+		
+		.nav a:hover{
+			background-color:blue;
+			color: white;
+		}
+
+		.nav ul ul ul{
+			top: 0px;
+			left: 100%;
+		}
+		#content-left{
+			border: 1px purple solid;
+		}
+		#content-left-slideshow{
+			height: 300px;
+			border: 1px blue solid;
+		}
+		#content-left-body{
+		 	border: 1px blue solid;
+		 }
+		#content-right{
+			border: 1px black solid;
+		}
+		#footer{
+			background-color: #000;
+			color: white;
+			text-align: center;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="header" class="row">
+			<div class="col-sm-3">Logo</div>
+			<div class="col-sm-9">Slogan</div>
+		</div><!--End #header-->
+		<div id="menu" class="row nav">
+			<ul>
+       			<li><a href="#">Trang chủ</a></li>
+       			<li><a href="#">Giới thiệu</a></li>
+       			<li>
+           			<a href="#">Sản phẩm Nam</a>
+            		<ul>
+              		  	<li><a href="#">Quần Nam</a></li>
+						<li>
+							<a href="#">Áo Nam</a>
+							<ul>
+								<li><a href="#">Áo Việt Nam</a></li>
+								<li><a href="#">Áo Trung Quốc</a></li>
+								<li><a href="#">Áo Mỹ</a></li>
+							</ul>
+						</li>
+                		<li><a href="#">Ví Nam</a></li>
+           			 </ul>
+        		</li>
+        		<li>
+            		<a href="#">Sản phẩm Nữ</a>
+           			 <ul>
+                		<li><a href="#">Áo Nữ</a></li>
+                		<li><a href="#">Quần Nữ</a></li>
+                		<li><a href="#">Ví Nữ</a></li>
+            		</ul>
+        		</li>
+        		<li><a href="#">Liên hệ</a></li>
+    		</ul>
+		</div>
+		<!--End #menu-->
+		<div id="content" class="row ">
+			<div id="content-left" class="col-sm-8 ">
+				<h3>Đăng kí thành viên</h3>
+				<form action="#" method="post">
+					Địa chỉ Email:
+					<input type="text" name="txtEmail" class="form-control">
+					Mật khẩu:
+					<input type="text" name="txtPass" class="form-control">
+					Giới tính:
+					Nam<input type="radio" name="rbGender" value="nam" class="form-control">
+					Nữ<input type="radio" name="rbGender" value="nu" class="form-control">
+					Thành Phố:
+					<select name="cbcity" class="form-control">
+						<option value="HN">HN</option>
+						<option value="HCM">HCM</option>
+						<option value="DN">DN</option>
+					</select>
+					<input type="submit" name="btnReg" value="Đăng kí" class="form-control btn btn-success">
+				</form>
+			</div>	
+			<div id="content-right" class="col-sm-4">
+				<h3>Bài viết mới</h3>
+			</div>	
+		</div>
+		<!--End #content-->
+		<div id="footer" class="row">
+			<div class="col-sm-12" >
+				@Copyright by DUONG XUAN DUC
+			</div>
+		</div>
+	</div>
+	
+</html>
