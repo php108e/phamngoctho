@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+	<style type="text/css">
+		
+		div{
+			
+			margin-bottom: 5px;
+		}
+		#header{
+			height: 100px;
+			border: 2px solid red;
+		}
+		#content-left-slideshow
+		{
+			height: 300px;
+			
+		}
+		#content-left-slideshow
+		{
+			height: 300px;
+			border: 2px solid blue;
+
+		}
+		#content-left-body
+		{
+			border: 2px solid blue;
+		}
+		#footer
+		{
+			background: black;
+			color: white;
+			text-align: center;
+			padding: 5px;
+			border: 2px solid yellow;
+			
+		}
+		#menu
+		{
+			border: 3px;
+			border: 2px solid pink;
+		}
+		#content-right
+		{
+			border: 2px solid pink;
+		}
+		#menu ul
+		{
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+
+		}
+		#menu ul li
+		{
+			border: 1px solid red;
+		}
+		
+		#menu ul li:hover>ul
+		{
+			display:inline-block;
+		}
+		#menu ul li ul
+		{
+			display: none;
+		}
+		#menu ul li
+		{
+			width: 200px;
+			position: relative;
+			display: inline-block;
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="container" >
+
+		<div id="header" class="row">
+			<div class="col-sm-3" >Logo</div>
+			<div class="col-sm-9" >Slogan</div>
+		</div><!----end header---->
+
+		<div id="menu" class="row">
+			<div class="col-sm-12">
+				<ul>
+			<li>Trang chủ</li>
+			<li>Giới thiệu</li>
+			<li>
+				<a href="#"> Sản phẩm nam</a>
+				<ul>
+					<li><a href="#"> Áo nam</a>
+						<ul>
+							<li><a href="#">Áo Việt Nam</a></li> 
+							<li><a href="#"> Áo Trung Quốc</a></li>
+							<li><a href="#"> Áo Mỹ</a> </li>
+						</ul>
+					</li>
+					<li>Quần nam</li>
+					<li>Ví Nam</li>
+				</ul>
+			</li>
+			<li>
+				Sản phẩm nữ
+			</li>
+			<li>Liên hệ</li>
+		</ul>
+
+
+			</div>
+		</div><!----end menu---->
+
+		<div id="content" class="row">
+
+			<div id="content-left"  class="col-sm-8">
+				<div id="content-left-slideshow" class="row" >slide</div>
+				<div id="content-left-body" class="row">
+					<TABLE class="table table-bordered table-hover ">
+						<tr>
+							<th>TT</th>
+							<th>Họ và tên</th>
+							<th>tuổi</th>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Nguyễn Văn A</td>
+							<td>Nam</td>
+						</tr>
+					</TABLE>
+				</div>
+			</div>
+
+			<div id="content-right" class="col-sm-4"><h3>Bài viết mới</h3></div>
+		</div><!--end content-->
+
+
+
+
+
+
+
+	<div id="footer" class="row">
+		<div class="col-sm-12">
+			abc xyz
+		</div>
+	</div>
+
+
+
+
+
+
+	</div>
+	
+<!--tạo form với boostrap có class là form-control
+
+VD1: <input type="radio" name="gioitinh" value="nam " class="form-control"
+VD2:
+
+
+<select name="city" class="form-control">
+	<option value="hanoi">ha noi</option>
+	.....
+</select>
+
+VD3:nut bam
+<input type="submit" value="dang ki" name="btn-reg(what ever you like)" class="form-control btn btn-success"
+
+-->
+</body>
+</html>

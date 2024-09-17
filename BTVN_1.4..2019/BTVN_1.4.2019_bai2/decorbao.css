@@ -1,0 +1,40 @@
+.c1
+{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+.c2
+{
+	color: blue;
+	font-weight: bold;
+	margin: 5pt;
+	
+
+}
+
+.c
+{
+	margin: 120pt;
+
+}
+
+.c3
+{
+	border: 2px solid black;
+
+
+}
+.c4
+{
+	margin: 30pt;
+}
+.c5
+{
+	margin: 150pt;
+}
+
+a{
+	text-decoration: none;
+}
