@@ -1,0 +1,24 @@
+#logo1
+{
+	position: absolute;
+	top: 50px;
+	left: 700px;
+}
+#logo2
+{
+	position: absolute;
+	top: 50px;
+	left: 10px;
+}
+#logo3
+{
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+#logo4
+{
+	position: absolute;
+	bottom: 20px;
+	right: 500px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		function getInfo()
+		{
+			var name = document.getElementById("txtfullname").value;
+			var Age = document.getElementById("txtage").value;
+			alert("ten"+ name+"\n tuoi" +Age)
+
+		}
+		function incrementSize(_height, _width)
+		{
+			var h = document.getElementById("anh").height;
+			var w = document.getElementById("anh").width;
+			h = h + _height;
+			w = w + _width;
+
+			document.getElementById("anh").height = h;
+			document.getElementById("anh").width = w;
+		}
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend>Information Form</legend>
+		fullname <input type="text" id="txtfullname"><br> 
+		Age <input type="text" id="txtage"><br>
+		<input type="button" value="Get Info" onclick="getinfo();">
+	</fieldset>
+		<input type="button" value="tang" onclick="incrementSize(30,30)">
+		<input type="button" value="giam" onclick="decrementSize(30,30)">		
+		<img src="./image/4.jpg" alt="anh" id="anh">
+	
+</body>
+</html>

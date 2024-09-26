@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function numericonly()
+	{
+			if (event.keyCode>=47 && event.keyCode<=57)
+			event.returnValue=true;
+		else
+		{
+			event.returnValue=false;
+		}
+			
+	}
+		function countword()
+		{
+			var message;
+			message= document.getElementById('txtMessage').value;
+			message=message.replace(/\s+/g,' ');
+			var numberofwords = message.split(' ').length;
+			document.getElementById('txtMessage1').value ='Word remaining: '+eval(10- numberofwords);
+			if (numberofwords >=10)
+			alert('too many words.');
+		}
+	</script>
+</head>
+<body>
+	<form>
+		SMS Editor
+		<table>
+			<tr>
+			<td>Mobie Number</td>
+			<td>
+				<input type="text" id="txtMobNo" onkeypress="numericonly() ">
+			</td>
+			</tr>
+
+			<tr>
+				<td>Message</td>
+				<td>
+					<input type="text" id="txtMessage" onkeydown="countword()">
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+				<input type="text" id="txtMessage1">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="submit" name="btnSubmit" value="Sent SMS" value="dang ki" onclick="alert("hello") style="width: 80px">
+				</td>
+			</tr>
+
+		</table>
+		
+
+	</form>
+
+</body>
+</html>

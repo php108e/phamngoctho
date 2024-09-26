@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang đặt phòng</title>
+	<link rel="stylesheet" type="text/css" href="./css/cssbaithi.css">
+	<script >
+		function validate {
+			var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var status = true;
+            var ngayden = document.getElementById(txtdate).value;
+            var ngaydi = document.getElementById(txtdate).value;
+            var tennguoidung = document.getElementById("txtUsername").value;
+          if (ngayden == "") {
+              
+                document.getElementById("msgdate").innerHTML = "Ngày Không được để trống";
+                document.getElementById("txtdate").style.borderColor = "red";
+                status = false;
+                status2 = false;
+            } else {
+            
+                document.getElementById("msgdate").style.display = "none";
+                status = true;
+          if (ngaydi == "") {
+              
+                document.getElementById("msgdates").innerHTML = "Ngày Không được để trống";
+                document.getElementById("txtdates").style.borderColor = "red";
+                status = false;
+                status2 = false;
+            } else {
+            
+                document.getElementById("msgdates").style.display = "none";
+                status = true;
+            if (loaiphong == "") {
+              
+                document.getElementById("msgnumber").innerHTML = "Đề Nghị Chọn Phòng";
+                document.getElementById("textnumber").style.borderColor = "red";
+                status = false;
+                status2 = false;
+            } else {
+            
+                document.getElementById("msgnumber").style.display = "none";
+                status = true;
+
+                 var moPattern = /^([0-9]{10})/;
+            if (phone == "") {
+                document.getElementById("msgPhone").innerHTML = "Please input Phone";
+                document.getElementById("txtPhone").style.borderColor = "red";
+                status = false;
+                status2 = false;
+            } else {
+                if (moPattern.test(phone) == false) {
+                    document.getElementById("msgPhone").innerHTML = "Phone invalid!";
+                    document.getElementById("txtPhone").style.borderColor = "red";
+                    status = false;
+                } else {
+                    //document.getElementById("msgUser").innerHTML = "";
+                    document.getElementById("msgPhone").style.display = "none";
+                    status = true;
+                }
+            }    
+            if (tennguoidung == "") {
+                //alert("Ten nguoi dung khong dc de trong.");
+                document.getElementById("msgUsername").innerHTML = "Please input Username";
+                document.getElementById("txtUsername").style.borderColor = "red";
+                status = false;
+                status2 = false;
+            } else {
+                //document.getElementById("msgUser").innerHTML = "";
+                document.getElementById("msgUsername").style.display = "none";
+                status = true;
+            }      
+             var email = document.getElementById('email'); 
+    		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    		if (!filter.test(email.value)) 
+    		{ 
+             alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+             email.focus; 
+             return false; 
+    		}
+    		else{ 
+             alert('OK roi day, Email nay hop le.'); 
+   			} 
+} 
+
+            }                  
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+
+	<center><h1 id="h1" style="color: green">ITPLUS HOTEL</h1></center>
+	<div class="menu">
+		<ul>
+			<li>Trang chủ</li>
+			<li>Giới thiệu</li>
+			<li>Dịch vụ tiện ích</li>
+			<li>Đặt Phòng</li>
+			<li>Liên Hệ</li>
+		</ul>
+	</div>
+	</div>
+
+	<div class="conten">
+			<h1 style="text-align: center; color: green">Đặt Phòng Online</h1>
+	<form>
+		<center>
+			<table>
+				<tr>
+        		<td>Ngày Đến (*): </td> <br><br><br><br><br><br><br>
+        		<td>
+        			<input type="text" name="textdate" id="textdate">
+        			<span id="msgdate"></span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<td>Ngày Đi (*): </td> <br><br><br><br><br><br><br>
+        		<td>
+        			<input type="text" name="textdates" id="textdates">
+        			<span id="msgdates"></span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<td>Loại Phòng (*): </td> <br><br><br><br><br><br><br>
+        		<td>
+        			<input type="text" name="textnumber" id="textnumber">
+        			<span id="msgnumber"></span>
+        		</td>
+        	</tr>
+        	 <tr>
+                <td>Số điện thoại *</td>
+                <td>
+                    <input type="number" name="txtPhone" id="txtPhone">
+                    <span id="msgPhone"></span>
+                </td>
+            </tr>
+            <tr >
+        		<td>Họ Tên*</td> <br><br><br><br><br><br><br>
+        		<td>
+        			<input type="text" name="textUsername" id="txtUsername">
+        			<span id="msgUsername"></span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<td>Địa chỉ Email </td>
+        		<input type="text" name="email" id="email">
+        			<span id="msgemail"></span>
+        	</tr>
+
+
+
+        	<td>
+                    <input type="submit" name="btnSubmit" value="Thuê Phòng">
+                </td>
+			</table>
+		</center>
+	</form>
+	</div>
+</body>
+</html>

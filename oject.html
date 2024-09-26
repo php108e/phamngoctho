@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sa</title>
+</head>
+<body>
+	<script>
+		//tao doi tuong trong js co kieu object
+		//var doctor = new Object();
+		//gia tri cho thuoc tinh
+		//doctor.name ="Perter";
+		//doctor.name = 40;
+		//alert("ten bac sy: "+ doctor.name + "\n Tuoi: " + doctor.age);
+		//Tạo đối tương kiểu tamplate là đối tượng được người dùng đinh nghĩa
+		//Hàm khởi tạo giúp gán đối tượng và gán giá trị cho các đối tượng của nó
+		function Student(_n, _a, _l)
+		{
+			this.name = _n;
+			this.age = _a;
+			this.location= _l;
+		}
+		//Khai bao doi tuong co kiểu template
+		var ten = prompt("Nhap ten vao day: ");
+		var tuoi = prompt("nhap tuoi ")
+		var diachi = prompt("Moi ban nhap dia chi");
+		var objStu = new Student(ten, tuoi, diachi);
+		document.writeln("ten cua ban: "+ objStu.name)
+		document.writeln("<br>tuoi cua ban: "+ objStu.age)
+		document.writeln("<brdia chi: "+ objStu.location)
+	</script>
+</body>
+</html>

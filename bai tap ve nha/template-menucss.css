@@ -1,0 +1,59 @@
+.menuchinh ul #menuphu1 ul
+{
+	display: none;
+	}
+.menuchinh ul #menuphu1:hover ul
+{
+	display: block;
+	}
+.menuchinh ul #menuphu2 ul
+{
+	display: none;
+	}
+.menuchinh ul #menuphu2:hover ul
+{
+	display: block;
+	}
+.menuchinh ul #menuphu1 ul #menuphu1-1 ul
+{
+	display: none;
+	}
+.menuchinh ul #menuphu1 ul #menuphu1-1:hover ul
+{
+	display: block;
+	}
+.menuchinh ul
+{
+	list-style-type: none;
+}
+.menuchinh ul a 
+{
+	list-style-type: none;
+	text-decoration: none;
+	background: blue;
+	width: 100px;
+	float: left;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	border-left: 1px solid black;
+}
+.menuchinh ul a:hover
+{
+	background: red;
+}
+.menuchinh ul #menuphu1-1 ul
+{
+	list-style-type: none;
+	text-decoration: none;
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+.menuchinh ul #menuphu2 ul
+{
+	text-decoration: none;
+	width: 100px;
+	text-align: center;
+}
+

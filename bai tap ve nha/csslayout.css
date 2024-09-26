@@ -1,0 +1,134 @@
+.phan1
+{
+  padding: auto;
+  margin: auto;
+  width: 80%;
+  border: 1px solid white;
+}
+
+		#modau
+		{
+			font-size: 20px;
+			color: blue;
+			text-align: center;
+			float: left;
+			
+		}
+		#modau2
+		{
+			color: blue;
+			font-size: 20px;
+			padding-top: 10px;
+			padding-bottom: 30px;
+			padding-left: 400px;
+		}	
+		#modau3
+		{
+			padding-top: 1px;
+			padding-bottom: 10px;
+			padding-left: 1100px;
+		}			
+.phan2
+{
+  background-color: #ccccff;
+  width: auto;
+  height: 50px;
+  padding-top: 5px;
+  border: 1px solid white;
+  font-size: 100px;
+}	
+#phangiua1
+{
+	opacity: 0.4;
+}
+.phan2-1
+{
+	color: white;
+	font-size: 15px;
+	float: center;
+	padding-bottom: 10px;
+
+}
+#doan2-1
+{
+	padding-left: 60px;
+	font-size: 20px;
+	display: inline;
+}	
+#doan2-2
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}
+#doan2-3
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}
+#doan2-4
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}
+#doan2-5
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}
+#doan2-6
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}
+#doan2-7
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}			
+#doan2-8
+{
+	padding-left: 20px;
+	font-size: 20px;
+	display: inline;
+	}		
+.congviec
+{
+	float: left;
+	}
+.noidung
+{
+	float: center;
+	text-align: center;
+	font-family: bold;
+	background-color: white;
+	width: auto;
+	padding-top: auto;
+	height: auto;
+	color: blue;
+	font-size: 20px;
+	}
+.chitiet
+{
+	width: 800px;
+	height: 400px;
+	background-color: white;
+	padding-top: auto;
+	text-align: left;
+	}
+.ketthuc
+{
+	width: auto;
+	height: 40px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-top: 20px;
+	font-size: 20px;
+	padding: 20px;
+	}

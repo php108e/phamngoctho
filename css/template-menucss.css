@@ -1,0 +1,16 @@
+.menu ul 
+{
+	background: gray;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.menu ul li
+{
+	display: inline;
+}
+.menu ul li ul
+{
+	display: inline;
+	display: block;
+}

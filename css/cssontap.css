@@ -1,0 +1,59 @@
+body
+{
+	background-color: blue;
+}
+h1
+{
+	text-align: center;
+	color: red;
+}
+.container
+{
+	background-color: white;
+	width: 88%;
+	height: 760px;
+	margin: auto;
+	margin-top: -20px;
+	marker-end: auto;
+}
+.menu ul
+{
+	background: green;
+	text-align: center;
+	color: white;
+}
+.menu ul li
+{
+	display: inline-table;
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	border: 2px solid black;
+	position: relative;
+	position-top: 25px;
+}
+.menu ul li:hover
+{
+	background-color: red;
+}
+img
+{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.noidung
+{
+	height: 140px;
+	padding-left: 10px;
+}
+#font
+{
+	padding-left:180px;
+	color: green;
+}
+#font1
+{
+	padding-left:180px;
+
+}
