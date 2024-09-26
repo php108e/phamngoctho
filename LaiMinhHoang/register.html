@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng Kí tư vấn</title>
+	<title>Tin Tức</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		/*function refreshPage(){
+    	window.location.reload();
+		} */
+		function validate(){
+		var status = true;
+			
+			var user = document.getElementById("txtHoten").value;
+			var dc = document.getElementById("txtDiaChi").value;
+			var email = document.getElementById("txtEmail").value;
+			var phone = document.getElementById("txtPhone").value;
+			var noidung =document.getElementById("txtNoiDung").value
+				
+				
+			if (user=="") {
+				
+				document.getElementById("msgHoten").innerHTML="Họ Tên không được để trống";
+				document.getElementById("txtHoten").style.borderColor= "blue";
+				status = false;
+			}
+			else
+			{
+				
+				document.getElementById("msgHoten").style.display="none";
+				
+				status =true;
+			}
+			var	moPattern = /^([0-9]{10})/;
+			if (phone=="") {
+				
+				document.getElementById("msgPhone").innerHTML="Số điện thoại không được để trống";
+				document.getElementById("txtPhone").style.borderColor= "red";
+				status = false;
+			}
+			else
+			{
+				if (moPattern.test(phone)==false) {
+					document.getElementById("msgPhone").innerHTML="Phone không đúng định dạng";
+					document.getElementById("txtPhone").style.borderColor= "red";
+					status = false;
+				}
+					else{
+						document.getElementById("msgPhone").innerHTML="";
+						document.getElementById("txtPhone").style.display= "red";
+					}
+				
+				
+			}
+			var maPatterm = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+			if (email=="") {
+				
+				document.getElementById("msgEmail").innerHTML="Email không được để trống";
+				document.getElementById("txtEmail").style.borderColor= "purple";
+				status = false;
+			}
+			else
+			{
+				if (maPatterm.test(email)) {
+					document.getElementById("msgEmail").innerHTML= "Email không đúng định dạng";
+					document.getElementById("txtEmail").style.borderColor="pink";
+					status= false;
+				}
+				else{
+				document.getElementById("msgEmail").innerHTML="";
+				document.getElementById("txtEmail").style.display="black";
+				
+				}
+			}
+
+			if (dc=="") {
+				
+				document.getElementById("msgDiaChi").innerHTML="Địa Chỉ không được để trống";
+				document.getElementById("txtDiaChi").style.borderColor= "yellow";
+				status = false;
+			}
+			else
+			{
+				
+				document.getElementById("msgDiaChi").style.display="none";
+				
+				status =true;
+			}
+
+			if (noidung=="") {
+				
+				document.getElementById("msgNoiDung").innerHTML="Nội Dung không được để trống";
+				document.getElementById("txtNoiDung").style.borderColor= "green";
+
+				status = false;
+			}
+			else
+			{
+				
+				document.getElementById("msgNoiDung").style.display="none";
+				
+				status =true;
+			}
+
+
+
+
+
+			if (status ==true) {
+				return true;
+			} else{
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="container">
+	<div class="header">ITPLUS COMPANY</div>
+	<div class="nav"> 
+		<ul>	
+			<li><a href="#">Trang chủ</a></li>
+        	<li><a href="#">Giới thiệu</a></li>
+        	<li><a href="#">Mở Bán</a></li>
+        	<li><a href="news.html">Tin Tức</a></li>
+        	<li style="border-right: 1px solid white"><a href="register.html">Đăng kí nhận tư vấn</a></li>
+ 		</ul>
+
+	</div>
+	<div class="form">
+		<form action="process.php" method="POST" onsubmit="return validate();">
+		<h1>Đăng kí Nhận Tư Vấn</h1>
+		<table>
+			<tr>
+				<td>Họ Và Tên(*)    :</td>
+				<td>
+					<input type="text" name="txtHoten" id="txtHoten">
+					<span id="msgHoten"> </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Số điện thoại (*)   :</td>
+					<td>
+						<input type="text" name="txtphone" id="txtPhone">
+						<span id="msgPhone"> </span>
+					</td>
+			</tr>
+
+			<tr>
+				<td>Email (*)   :</td>
+					<td>
+						<input type="text" name="txtEmail" id="txtEmail">
+						<span id="msgEmail"> </span>
+					</td>
+			</tr>
+
+			<tr>
+				<td>Địa Chỉ (*)   :</td>
+				<td>
+					<input type="text" name="txtDiaChi" id="txtDiaChi">
+					<span id="msgDiaChi"> </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Nội Dung (*)  :</td>
+				<td>
+					<input class="NoiDung" type="text" name="txtNoiDung" id="txtNoiDung">
+					<span id="msgNoiDung"> </span>
+				</td>
+			</tr>
+
+
+			
+
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="btnSubmit" value="Đăng Kí" onclick="alert("Hello")" style="width: 80px">
+					<input type="reset" name="resetSubmit" value="Nhập Lại" onClick="window.location.reload()" style="width: 80px">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</div>
+</body>
+</html>

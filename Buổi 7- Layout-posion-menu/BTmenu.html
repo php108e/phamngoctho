@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập MENU</title>
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding: 0;
+}
+.Nav ul
+{
+	background: gray;
+	text-align: center;
+	color: white;
+	float: left;
+	width: 100%;
+}
+.Nav ul li
+{
+	display: inline-table;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.Nav ul li:hover
+{
+	background: orange;
+	text-decoration-color: green;
+}
+.Nav ul li > ul
+{
+	display: none;
+	position: absolute;
+}
+.Nav ul li:hover > ul
+{
+	display: block;
+}
+.Nav ul li ul li ul
+{
+	
+	left: 120px;
+	top: 0;
+}
+	</style>
+</head>
+<body>
+
+
+<div class="Nav">
+	<ul>
+		<li>Trang chủ</li>
+		<li>Giới thiệu</li>
+		<li>Sản phẩm Nam
+			<ul>
+				<li>Áo Nam</li>
+				<li>Quần Nam
+					<ul>
+						<li>Quần Mỹ</li>
+						<li>Quần Trung</li>
+						<li>Quần Việt Nam</li>
+					</ul>
+					<div class="clear"></div>
+				</li>
+				<li>Ví Nam</li>
+			</ul>
+		</li>
+		<li>Sản phẩm nữ
+			<ul>
+				<li>Áo nữ</li>
+				<li>Quần nữ</li>
+				<li>Ví nữ</li>
+			</ul>
+		</li>
+		<li>Liên hệ</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+
+
+
+</body>
+</html>

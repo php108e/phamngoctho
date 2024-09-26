@@ -1,0 +1,49 @@
+div{
+	margin-bottom: 20px;
+}
+
+#block1 a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+}
+
+#block1 a:hover{
+	text-decoration: underline;
+	color: yellow;
+	background: red;
+}
+
+#block2{
+	text-align: center;
+	color: red;
+	text-transform: uppercase;
+	font-size: 20pt;
+}
+
+#block3{
+	font-weight: bold;
+	font-style: italic;
+	background-color: gray;
+	color: blue;
+}
+
+#block5{
+	font-family: tahoma;
+	color: green;
+	font-size: 25px;
+}
+
+.block{
+	text-align: justify;
+	line-height: 25px;
+}
+
+.block4{
+	text-decoration: underline;
+	color:orange;
+}
+
+
+

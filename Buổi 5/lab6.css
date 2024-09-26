@@ -1,0 +1,38 @@
+div{
+	margin-bottom: 20px;
+}
+
+#block{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	color: red;
+	border-width: 7px;
+   border-style: solid;
+   border-color: green;
+
+}
+
+#block1{
+	background-color: green;
+	color: white;
+	text-indent: 40px;
+}
+
+.a1{
+	text-indent: 40px;
+}
+
+.Swift{
+	color: red;
+	font-weight: bold;
+}
+
+.blue{
+	color: blue;
+}
+
+.gc2{
+	background-color: orange;
+	text-decoration: underline;
+}

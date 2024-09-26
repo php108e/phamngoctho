@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+<script type="text/javascript">
+	function validate(){
+
+			var status = true;
+			//lấy dữ liệu của các đối tượng trong form
+			var user = document.getElementById("txtUser").value;
+			var pas = document.getElementById("txtPass").value;
+			var email = document.getElementById("txtEmail").value;
+			var phone = document.getElementById("txtPhone").value;
+				//return false;
+				
+			if (user=="") {
+				//alert("Tên đăng nhập không được để trống")
+				document.getElementById("msgUser").innerHTML="Username không được để trống";
+				document.getElementById("txtUser").style.borderColor= "red";
+				status = false;
+			}
+			else
+			{
+				//document.getElementById("msgUser").innerHTML=""; 
+				document.getElementById("msgUser").style.display="none";
+				//return true;
+				status =true;
+			}
+
+			
+			if (pas=="") {
+				//alert("Tên đăng nhập không được để trống")
+				document.getElementById("msgPass").innerHTML="Pass không được để trống";
+				document.getElementById("txtPass").style.borderColor= "red";
+				//return false;
+				status = false;
+			}
+			else
+			{
+				//document.getElementById("msgUser").innerHTML=""; 
+				document.getElementById("msgPass").style.display="none";
+				//return true;
+				status =true;
+			}
+
+
+			if (email=="") {
+				//alert("Tên đăng nhập không được để trống")
+				document.getElementById("msgEmail").innerHTML="Email không được để trống";
+				document.getElementById("txtEmail").style.borderColor= "red";
+				//return false;
+				status = false;
+			}
+			else
+			{
+				//document.getElementById("msgUser").innerHTML=""; 
+				document.getElementById("msgEmail").style.display="none";
+				//return true;
+				status =true;
+			}
+				// Tạo biểu mẫu kiểm tra định dạng sđt
+			var	moPattern = /^([0-9]{10})/;
+			if (phone=="") {
+				//alert("Tên đăng nhập không được để trống")
+				document.getElementById("msgPhone").innerHTML="Phone không được để trống";
+				document.getElementById("txtPhone").style.borderColor= "red";
+				//return false;
+				status = false;
+			}
+			else
+			{
+				if (moPattern.test(phone)==false) {
+					document.getElementById("msgPhone").innerHTML="Phone không đúng định dạng";
+					document.getElementById("txtPhone").style.borderColor= "red";
+				//return false;
+				status = false;
+				}
+				else{
+					document.getElementById("msgPhone").innerHTML="";
+					document.getElementById("txtPhone").style.display= "red";
+					status =true;
+				}
+				/*//document.getElementById("msgUser").innerHTML=""; 
+				document.getElementById("msgPhone").style.display="none";
+				//return true;*/
+			
+			}
+				//return status;
+
+			if (status ==true) {
+				return true;
+			} else{
+				return false;
+			}
+	}
+
+</script>
+</head>
+<body>
+	<div>
+	<form action="process.php" method="POST" onsubmit="return validate();">
+		<h1>Đăng kí thông tin thành viên</h1>
+		<table>
+			<tr>
+				<td>Username</td>
+				<td>
+					<input type="text" name="txtUser" id="txtUser">
+					<span id="msgUser"> </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="password" name="txtPass" id="txtPass">
+					<span id="msgPass"> </span>
+				</td>
+				
+			</tr>
+
+			<tr>
+				<td>Địa chỉ Email</td>
+				<td>
+					<input type="text" name="txtEmail" id="txtEmail">
+					<span id="msgEmail"> </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Số điện thoại</td>
+				<td>
+				<input type="text" name="txtphone" id="txtPhone">
+				<span id="msgPhone"> </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="btnSubmit" value="Register" onclick="alert("Heloo")>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

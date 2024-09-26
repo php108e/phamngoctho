@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login.html</title>
+	<meta charset="utf-8">
+</head>
+<body style="background-color: gray">
+<div>
+	<h1>Chào mừng các bạn đến với ABC-Cord. Đăng nhập ngay!</h1>
+	<br>
+	Thành viên mới? <a href="register.html">Đăng kí</a> tại đây
+</div>
+<div style="background-color: white">
+	<form action="login_proccess.php" method="post"> 
+		<label>Địa chỉ Email*</label><br>
+		<input type="text" name="txtEmail" value="" placeholder="Vui lòng nhập Email của bạn ">
+		<br>
+		<label>Mật khẩu*</label><br>
+		<input type="password" name="txtPass" value="" placeholder="Vui lòng nhập mật khẩu của bạn ">
+		<br>
+		<a href="">Quên mật khẩu?</a><br>
+		<input type="submit" name="btnlogin" value="Đăng nhập"> <br>
+		<label>Hoặc đăng nhập bằng:</label><br>
+		<input type="button" name="btnFacebook" value="Facebook"><br>
+		<input type="button" name="btnRGoogle" value="Google"><br>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buoi so 3 Java</title>
+	<meta charset="utf-8">
+
+	<script>
+		function getInfo(){
+			
+		}
+		function getInfo(){
+			var name = document.getElementById("txtFullname").value;
+			var age = document.getElementById("txtAge").value;
+			alert("Ho va ten: " + name "Tuoi: " + age);
+		}
+		function IncrementSize(){
+			var h = document.getElementById("anh").height;
+			var w = document.getElementById("anh").width;
+			h = h + _height;
+			w = w + _width;
+
+			document.getElementById("anh").height = h;
+			document.getElementById("anh").height = w;
+			
+		}
+
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend>Infomation Form</legend>
+		Fullname <input type="text" id="txtFullname"><br>
+		Age <input type="text" id="txtAge"><br>
+		<input type="button" value="Get Info" onclick="getInfo()">
+	</fieldset>
+
+	<input type="button" value="Tang" onclick="IncrementSize();">
+	<img src="./tivi.jpg" id="anh">
+
+
+</body>
+</html>

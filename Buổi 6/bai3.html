@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baifloat</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			color: white;
+			font-size: 20px;
+		}
+		.container{
+			margin: auto;
+			width: 80%
+		}
+		.header{
+			background-color: red;
+			height: 110px;
+		}
+		.nav   {
+			height: 40px;
+			background-color: green;
+		}
+
+		.nav ul{
+			list-style: none;
+		}
+		.nav ul li{
+			display: inline-block;
+			line-height: 40px;
+			margin: 0px 10px;
+		}
+		.nav ul li ul{
+			display: none;
+		}
+		.nav ul li:hover .nav ul li ul{
+			display: block;
+		}
+
+
+		.content{
+			float: left;
+			width: 70%;
+		}
+		.section{
+			background-color: blue;
+			height: 200px;
+		}
+		.article{
+			background-color: black;
+			height: 200px;
+		}
+		.aside{
+			float: left;
+			height: 400px;
+			background-color: gray;
+			width: 30%;
+		}
+		.footer{
+			clear: both;
+			background-color: orange;
+			height: 110px;
+
+		}
+		
+
+	</style>
+</head>
+<body>
+<div class="container"> 
+	<div class="header">Header</div>
+
+	<div class="nav">
+			<ul>
+				<li><a href="">Thời trang Nữ</a>
+					<ul>
+						<li><a href="">Áo nữ</a></li>
+						<li><a href="">Quần nữ</a></li>	
+					</ul></li>
+				<li><a href="">Thời trang nam</a>
+					<ul>
+						<li><a href="">Áo Nam</a></li>
+						<li><a href="">Quần Nam</a></li>
+					</ul></li>
+				<li><a href="">Thời trang nam</a></li>
+			</ul>
+	</div>
+
+	<div class="content">
+		<div class="section"> Section</div>
+
+		<div class="article">article</div>
+	</div>
+
+	<div class="aside">aside</div>
+	<div class="footer">footer</div>
+</div>
+</body>
+</html>
